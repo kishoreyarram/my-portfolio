@@ -1,0 +1,31 @@
+{
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+        "browser": true,
+        "mocha": true,
+        "node": true
+    },
+
+    "rules": {
+        "arrow-body-style" : [2, "as-needed"],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/forbid-prop-types": [0, { "forbid": [<string>] }],
+        "react/require-default-props": 0,
+        "max-len": [ 2, 200, 2, {
+            "ignoreUrls": true,
+            "ignoreComments": false
+        }]
+    },
+
+    "plugins": [
+        "react"
+    ]
+}
