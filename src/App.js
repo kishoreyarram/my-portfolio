@@ -12,7 +12,7 @@ class App extends Component {
           <h2>Welcome</h2>
         </div>
         <p className="App-intro">
-          This is Kishore, I am constructing a new page.!
+          This is Kishore, constructing a new page.!
         </p>
 				<img src={under} className="under-logo" alt="under" />
       </div>
