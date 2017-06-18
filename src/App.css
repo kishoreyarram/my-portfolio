@@ -38,8 +38,23 @@
 }
 
 .Typist.text-animate {
-    margin-top: 30px;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-family: monospace;
+}
+
+@media only screen and (max-width: 900px) {
+    .Typist.text-animate  {
+        font-size: 14px;
+    }
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
 }

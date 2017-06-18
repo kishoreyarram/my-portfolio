@@ -1,10 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Typist from 'react-typist';
-// import logo from './logo.svg';
+
 import under from './under.png';
 import './App.css';
-// import NavBar from './NavBar';
-import Layout from './Layout';
+import Nav from './Nav';
 
 const cursor = {
   show: true,
@@ -14,27 +14,35 @@ const cursor = {
   hideWhenDoneDelay: 1000,
 };
 
-const App = () => (
-  <div className="App">
-    <div className="App-header">
-      {/* <img src={under} className="App-logo" alt="logo" /> */}
-      <div className="kishore-logo-div col-md-3">
-        <h1 className="kishore-logo">K</h1>
+function App({ children }) {
+  return (
+    <div className="App">
+      <div className="App-header">
+        <div className="kishore-logo-div col-md-3 col-sm-3 col-xs-3">
+          <h1 className="kishore-logo">K</h1>
+        </div>
+        <Typist
+          className="text-animate"
+          cursor={cursor}
+        > Hello there, <br />
+Im Kishore yarram, front-end developer.<br />
+Working with React, Webpack, Node and other stuff.</Typist>
       </div>
-      <Typist
-        className="text-animate"
-        startDelay="5"
-        avgTypingDelay="70"
-        cursor={cursor}
-      > This is kishore.!</Typist>
+      <p className="App-intro">
+        <Nav />
+        <img src={under} className="under-logo" alt="logo" />
+        {children}
+      </p>
+      <footer className="footer">
+        <p>Project is under Open Source <a href="">MIT License</a></p>
+        <p>Built with &hearts; &#8226; 2017 &copy; <a href="http://kishoreyarram.github.io/my-react/">Kishore Yarram</a></p>
+      </footer>
     </div>
-    <p className="App-intro">
-      <Layout />
-      {/* This is <b>Kishore</b>, constructing a new page.! */}
-      <img src={under} className="under-logo" alt="logo" />
-      {/* {children} */}
-    </p>
-  </div>
-);
+  );
+}
+
+App.propTypes = {
+  children: PropTypes.any,
+};
 
 export default App;
