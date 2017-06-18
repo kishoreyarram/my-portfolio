@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .App-logo {
@@ -16,6 +16,7 @@
 
 .App-intro {
   font-size: large;
+	/*text-align: center;*/
 }
 
 @keyframes App-logo-spin {
@@ -25,4 +26,20 @@
 
 .under-logo {
 	height: 100px;
+}
+
+.kishore-logo-div {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 5px;
+    border: 1px white solid;
+    border-radius: 63px;
+}
+
+.Typist.text-animate {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
 }
