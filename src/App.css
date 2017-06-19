@@ -1,5 +1,7 @@
 .App {
-  /*text-align: center;*/
+	overflow: scroll;
+	z-index: 999;
+	height: 1000px;
 }
 
 .App-logo {
@@ -14,7 +16,7 @@
   color: white;
 }
 
-.App-intro {
+.App-body {
   font-size: large;
 	/*text-align: center;*/
 }
@@ -37,6 +39,10 @@
     border-radius: 63px;
 }
 
+h1.kishore-logo {
+    color: white;
+    outline: none;
+}
 .Typist.text-animate {
     text-align: center;
     font-size: 25px;
@@ -50,11 +56,53 @@
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
   background-color: #efefef;
   text-align: center;
+}
+
+.quote-home {
+    margin: 85px;
+    text-align: center;
+    font-family: cursive;
+}
+
+a.facebook-button {
+    border: none;
+    background: #3b5998;
+    border-radius: 6px;
+    color: white;
+		padding: 5px;
+}
+a.facebook-button:hover {
+    padding: 8px;
+    text-decoration: none;
+}
+
+a.Git-button.pull-right {
+    color: white;
+    font-size: 20px;
+}
+
+.navbar {
+    background-color: mintcream;
+		box-shadow: 10px 10px 5px #888888;
+}
+
+button.menu-button {
+    background: none;
+    border: none;
+    margin: 10px;
+		outline: none;
+}
+
+.menu-add {
+    color: #337ab7;
+}
+.menu-remove {
+    color: #730705;
 }
