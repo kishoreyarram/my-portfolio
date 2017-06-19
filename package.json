@@ -1,11 +1,20 @@
 {
-  "name": "my-react-test",
+  "name": "Kishore-Portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kishoreyarram.github.io/my-react",
+  "homepage": "https://kishoreyarram.github.io/my-portfolio",
   "dependencies": {
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router": "^2.0.0",
+    "react-router-dom": "^4.1.1",
+    "react-router-redux": "^4.0.8",
+    "react-typist": "^1.1.1",
+    "redux": "^3.7.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

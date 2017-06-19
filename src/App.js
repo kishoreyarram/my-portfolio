@@ -1,23 +1,26 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import under from './under.png'
-import './App.css';
+import React from 'react';
 
-class App extends Component {
+import './App.css';
+import Nav from './Nav';
+import Header from './Header';
+import Footer from './Footer';
+
+export default React.createClass({
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome</h2>
+        <Header />
+        <div className="App-body">
+          <Nav />
+          <div className="container-123 col-md-10 col-sm-10 col-xs-12 pull-right">
+            {this.props.children ||
+            <p className="quote-home">
+              <q><b>Any Fool can write code that a computer can understand. Good Programmers write code that humans can understand.</b></q>
+            </p>}
+          </div>
         </div>
-        <p className="App-intro">
-          This is Kishore, constructing a new page.!
-        </p>
-				<img src={under} className="under-logo" alt="under" />
+        <Footer />
       </div>
     );
-  }
-}
-
-export default App;
+  },
+});
