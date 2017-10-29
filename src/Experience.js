@@ -6,6 +6,7 @@ import under from './under.png';
 const Contact = () => (
   <div className="constact">
     <Link to="/"><span className="glyphicon glyphicon-arrow-left" /> Back To Home</Link>
+    <p>Test this line</p>
     <img src={under} className="under-logo" alt="logo" />
   </div>
 );
