@@ -4,7 +4,6 @@ import { Link } from 'react-router';
 import paypal from './paypal.png';
 import apple from './apple.png';
 
-
 class Experience extends Component {
 
   constructor(props) {
